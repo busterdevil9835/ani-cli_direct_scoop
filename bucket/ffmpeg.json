@@ -1,0 +1,29 @@
+{
+    "version": "7.0.1",
+    "description": "A complete, cross-platform solution to record, convert and stream audio and video.",
+    "homepage": "https://ffmpeg.org",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.7z",
+            "hash": "e0d0526e95c18979c09c37564d63428f52f36098005b6b158098c9f536783d73",
+            "extract_dir": "ffmpeg-7.0.1-essentials_build"
+        }
+    },
+    "bin": [
+        "bin\\ffmpeg.exe",
+        "bin\\ffplay.exe",
+        "bin\\ffprobe.exe"
+    ],
+    "checkver": {
+        "url": "https://www.gyan.dev/ffmpeg/builds/release-version",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.7z"
+            }
+        }
+    }
+}
