@@ -1,0 +1,30 @@
+{
+    "version": "0.38.0",
+    "description": "Video player based on MPlayer and mplayer2",
+    "homepage": "https://mpv.io",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/v0.38.0/mpv-x86_64-v3-20240428-git-0a86682.7z",
+            "hash": "3587e97d105e26715f9b142981395f87b64082236a6e87364654922989b5387d"
+        }
+    },
+    "bin": "mpv.exe",
+    "shortcuts": [
+        [
+            "mpv.exe",
+            "mpv"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/shinchiro/mpv-winbuild-cmake",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/v$version/mpv-x86_64-v3-$matchDate-git-$matchHash.7z"
+            }
+        }
+    }
+}
