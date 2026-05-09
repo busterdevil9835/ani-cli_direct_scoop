@@ -5,3 +5,6 @@ I have copied a lot of stuff from the extras bucket so thanks a lot for that Sco
 
 
 Thank you for your cooperation
+
+
+btw, i have absolutely no idea of what i am doing so use this at your own risk
